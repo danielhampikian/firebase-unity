@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "287786363115",
+    "firebase_url": "https://class1-9fc1c.firebaseio.com",
+    "project_id": "class1-9fc1c",
+    "storage_bucket": "class1-9fc1c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:287786363115:android:a07dbbecc293a3b9",
+        "android_client_info": {
+          "package_name": "unity.danielhampikian.firebaseTest"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "287786363115-uv1mk80oud4tng58691va2te7k2vnlue.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDvUD9Op19FCXbeUc1g8L9QocjlB6VNNC4"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
