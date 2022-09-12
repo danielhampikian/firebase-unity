@@ -75,11 +75,6 @@ public class LoginHandler : MonoBehaviour {
     auth.StateChanged -= AuthStateChanged;
     auth.IdTokenChanged -= IdTokenChanged;
     auth = null;
-    if (otherAuth != null) {
-      otherAuth.StateChanged -= AuthStateChanged;
-      otherAuth.IdTokenChanged -= IdTokenChanged;
-      otherAuth = null;
-    }
   }
 
   // Output text to the debug log text field, as well as the console.

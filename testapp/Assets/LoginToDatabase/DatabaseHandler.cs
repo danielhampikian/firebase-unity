@@ -94,7 +94,13 @@ public class DatabaseHandler : MonoBehaviour {
               childSnapshot.Child("score").Value.ToString());
             leaderBoard.Insert(1, childSnapshot.Child("score").Value.ToString()
               + "  " + childSnapshot.Child("email").Value.ToString());
-          }
+
+                      displayScores.text = "";
+                      foreach (string item in leaderBoard)
+                      {
+                          displayScores.text += "\n" + item;
+                      }
+                  }
         }
       }
     };
@@ -105,16 +111,19 @@ public class DatabaseHandler : MonoBehaviour {
     if (Input.GetKeyDown(KeyCode.Escape)) {
       Application.Quit();
     }
-    if (addScorePressed)
-        {
-            displayScores.text = "";
-            foreach (string item in leaderBoard)
+        /*
+        if (addScorePressed)
             {
-                displayScores.text += "\n" + item;
+                displayScores.text = "";
+                foreach (string item in leaderBoard)
+                {
+                    displayScores.text += "\n" + item;
+                }
+             addScorePressed = false;
             }
-            addScorePressed = false;
-        }
-    }
+        */
+
+}
 
   // Output text to the debug log text field, as well as the console.
   public void DebugLog(string s) {
